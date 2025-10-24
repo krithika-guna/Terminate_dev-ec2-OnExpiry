@@ -1,6 +1,6 @@
-# 🧠 EC2 Auto-Termination System for Dev/Test VMs using Expiry Tag (Terraform + Lambda + EventBridge + SNS)
+# EC2 Auto-Termination System for Dev/Test VMs using Expiry Tag (Terraform + Lambda + EventBridge + SNS)
 
-## 🔍 Problem Statement
+## Problem Statement
 
 In our development workflow, developers often request temporary EC2 VMs to test code or debug issues. These VMs are created using a predefined AMI via Terraform. However, both DevOps and development teams frequently **forget to terminate** these instances after use. As a result, **unused VMs continue to run**, leading to **unnecessary AWS costs**.
 
@@ -21,7 +21,7 @@ To resolve this, we created a fully automated lifecycle management system:
       
 ---
 
-## 🧱 Components Used
+## Components Used
 
 | Service         | Purpose                                           |
 |----------------|---------------------------------------------------|
@@ -40,3 +40,4 @@ Lambda Function:
 ![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/708a0cb3-373c-43f5-86af-196e232c7154)
   SNS Sends Email:
 ![Screenshot 2025-05-16 at 8 14 59 AM](https://github.com/user-attachments/assets/babcf2d7-c55a-49cc-bbed-8921a489d5e2)
+
